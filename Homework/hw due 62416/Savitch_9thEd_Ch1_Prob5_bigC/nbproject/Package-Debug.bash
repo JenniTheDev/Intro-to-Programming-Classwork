@@ -6,16 +6,16 @@
 
 # Macros
 TOP=`pwd`
-CND_PLATFORM=Cygwin_4.x-Windows
-CND_CONF=Release
+CND_PLATFORM=Cygwin-Windows
+CND_CONF=Debug
 CND_DISTDIR=dist
 CND_BUILDDIR=build
 CND_DLIB_EXT=dll
 NBTMPDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}/tmp-packaging
 TMPDIRNAME=tmp-packaging
-OUTPUT_PATH=${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/Gladdis_8thed_Ch2_Prob12_Area
-OUTPUT_BASENAME=Gladdis_8thed_Ch2_Prob12_Area
-PACKAGE_TOP_DIR=Gladdis8thedCh2Prob12Area/
+OUTPUT_PATH=${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/savitch_9thed_ch1_prob5_bigc
+OUTPUT_BASENAME=savitch_9thed_ch1_prob5_bigc
+PACKAGE_TOP_DIR=savitch9thedch1prob5bigc/
 
 # Functions
 function checkReturnCode
@@ -60,15 +60,15 @@ mkdir -p ${NBTMPDIR}
 
 # Copy files and create directories and links
 cd "${TOP}"
-makeDirectory "${NBTMPDIR}/Gladdis8thedCh2Prob12Area/bin"
+makeDirectory "${NBTMPDIR}/savitch9thedch1prob5bigc/bin"
 copyFileToTmpDir "${OUTPUT_PATH}.exe" "${NBTMPDIR}/${PACKAGE_TOP_DIR}bin/${OUTPUT_BASENAME}.exe" 0755
 
 
 # Generate tar file
 cd "${TOP}"
-rm -f ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/package/Gladdis8thedCh2Prob12Area.tar
+rm -f ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/package/savitch9thedch1prob5bigc.tar
 cd ${NBTMPDIR}
-tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/package/Gladdis8thedCh2Prob12Area.tar *
+tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/package/savitch9thedch1prob5bigc.tar *
 checkReturnCode
 
 # Cleanup

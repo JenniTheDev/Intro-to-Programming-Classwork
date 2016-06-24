@@ -19,10 +19,9 @@ CCC=g++
 CXX=g++
 FC=gfortran
 AS=as
-QMAKE=qmake
 
 # Macros
-CND_PLATFORM=Cygwin_4.x-Windows
+CND_PLATFORM=Cygwin-Windows
 CND_DLIB_EXT=dll
 CND_CONF=Release
 CND_DISTDIR=dist
@@ -35,7 +34,8 @@ include Makefile
 OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
-OBJECTFILES=
+OBJECTFILES= \
+	${OBJECTDIR}/main.o
 
 
 # C Compiler Flags
@@ -54,27 +54,31 @@ ASFLAGS=
 # Link Libraries and Options
 LDLIBSOPTIONS=
 
-nbproject/qt-${CND_CONF}.mk: nbproject/qt-${CND_CONF}.pro FORCE
-	${QMAKE} VPATH=. -spec cygwin-g++ -o qttmp-${CND_CONF}.mk nbproject/qt-${CND_CONF}.pro
-	mv -f qttmp-${CND_CONF}.mk nbproject/qt-${CND_CONF}.mk
-	@sed -e 's/\/qt\/bin/\/qt\/bin\//g' nbproject/qt-${CND_CONF}.mk >nbproject/qt-${CND_CONF}.tmp
-	@mv -f nbproject/qt-${CND_CONF}.tmp nbproject/qt-${CND_CONF}.mk
-
-FORCE:
-
 # Build Targets
-.build-conf: ${BUILD_SUBPROJECTS} nbproject/qt-${CND_CONF}.mk
-	"${MAKE}" -f nbproject/qt-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/Gladdis_8thed_Ch2_Prob12_Area.exe
+.build-conf: ${BUILD_SUBPROJECTS}
+	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/gladdis_8thed_ch2_prob12_landarea.exe
 
-${CND_BUILDDIR}/Release/%.o: nbproject/qt-${CND_CONF}.mk
-	${MAKE} -f nbproject/qt-${CND_CONF}.mk "$@"
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/gladdis_8thed_ch2_prob12_landarea.exe: ${OBJECTFILES}
+	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
+	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/gladdis_8thed_ch2_prob12_landarea ${OBJECTFILES} ${LDLIBSOPTIONS}
+
+${OBJECTDIR}/main.o: main.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
 
 # Subprojects
 .build-subprojects:
 
 # Clean Targets
-.clean-conf: ${CLEAN_SUBPROJECTS} nbproject/qt-${CND_CONF}.mk
-	${MAKE} -f nbproject/qt-${CND_CONF}.mk distclean
+.clean-conf: ${CLEAN_SUBPROJECTS}
+	${RM} -r ${CND_BUILDDIR}/${CND_CONF}
+	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/gladdis_8thed_ch2_prob12_landarea.exe
 
 # Subprojects
 .clean-subprojects:
+
+# Enable dependency checking
+.dep.inc: .depcheck-impl
+
+include .dep.inc
