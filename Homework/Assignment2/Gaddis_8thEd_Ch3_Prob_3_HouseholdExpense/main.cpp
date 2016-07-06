@@ -2,7 +2,7 @@
  * File:   main.cpp
  * Author: Jennifer Felton
  * * Created on July 4th 2016  8:02pm
- * Purpose: Template
+ * Purpose: Monthly to Yearly Expense
  */
 
 //system Libraries

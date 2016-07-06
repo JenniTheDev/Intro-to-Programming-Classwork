@@ -1,8 +1,8 @@
 /* 
  * File:   main.cpp
  * Author: Jennifer Felton
- * * Created on June 20, 2016, 6:51 PM
- * Purpose: Template
+ * * Created on July 4, 2016 10:00am
+ * Purpose: Ticket Sales
  */
 
 //system Libraries
