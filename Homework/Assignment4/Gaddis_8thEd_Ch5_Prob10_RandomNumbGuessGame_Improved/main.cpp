@@ -2,7 +2,7 @@
  * File:   main.cpp
  * Author: Jennifer Felton
  * * Created on July 10, 2016 5:54PM
- * Purpose: Random Number Guessing Game Improved with Number of Tries
+ * Purpose: Random Number Guessing Game
  */
 
 //system Libraries
@@ -26,7 +26,7 @@ int main(int argc, char** argv) {
     
     
     //Declare Variables
-    int rndm=rand()%99+1, guess, tries=0; //random number, guess, tries counter
+    int rndm=rand()%99+1, guess; //random number, guess
     srand(static_cast<unsigned int>(time(0)));//set the time seed for random generator
         
     //Input Data
@@ -40,15 +40,11 @@ do {cout<<"Pick a number 1-100"<<endl;
      if (guess<=0, guess>=101) {
         cout<<"You did not pick a number between 1-100, pick again."<<endl;
         } else if (rndm>guess) {
-            tries++;
             cout<<"You need to guess higher"<<endl;
             } else if (rndm<guess) {
-                tries++;
                 cout<<"You need to guess lower"<<endl;
                 } else if (rndm==guess) {
-                    tries++;
                 cout<<"You guessed correctly!"<<endl;
-                    cout<<"The number of tries is "<<tries<<endl;
                 }       
 }
 while (guess !=rndm);    
