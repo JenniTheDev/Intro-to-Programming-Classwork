@@ -40,7 +40,8 @@ int main(int argc, char** argv) {
             if (play==1) {
                 cout<<"The objective of the game is to guess the 4 colors,"<<endl<<
                 "in the correct order, that the Codemaker has picked. The Codemaker"<<endl<<
-                "will let you know if you are right or wrong. Good Luck!"<<endl;
+                "will let you know if you are right with a 'O' or wrong with a 'X'."<<endl<<
+                "Good Luck! and Have fun!"<<endl;
                 cout<<endl;
             } else if (play!=1&&play!=2) {                    //if its not 1 or not 2
                 cout<<"Please pick again"<<endl;
@@ -137,19 +138,19 @@ int main(int argc, char** argv) {
         if (g1==m1&&g2==m2&&g3==m3&&g4==m4){
             cout<<"You won!"<<endl;break;
             } if (g1==m1){
-                cout<<"W";
+                cout<<"O";
             } else if (g1!=m1){
                 cout<<"X";
             } if (g2==m2){
-                cout<<"W";
+                cout<<"O";
             } else if (g2!=m2){
                 cout<<"X";
             }if (g3==m3){
-                cout<<"W";
+                cout<<"O";
             } else if (g3!=m3){
                 cout<<"X";
             }if (g4==m4){
-                cout<<"W";
+                cout<<"O";
             } else if (g4!=m4){
                 cout<<"X";
             }
