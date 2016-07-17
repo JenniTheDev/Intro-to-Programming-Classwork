@@ -54,7 +54,7 @@ int main(int argc, char** argv) {
     do {          
         cout<<"How many tries do you need? Enter a number between 8 and 12"<<endl;
         cin>>nTries;    
-        if (nTries<=8||nTries>=12) {
+        if (nTries<8||nTries>12) {
             cout<<"Try again with a number between 8 and 12"<<endl;
         } if (nTries>=8&&nTries<=12) {
             cout<<"You have chosen "<<nTries<<endl;
@@ -162,7 +162,7 @@ int main(int argc, char** argv) {
     cout<<"Game Over"<<endl;
     cout<<"You tried "<<nGuess<<" times"<<endl;
     cout<<"The code was "<<m1<<"-"<<m2<<"-"<<m3<<"-"<<m4<<endl;
-    cout<<"Better luck next time!"<<endl;
+    cout<<"Thanks for Playing Mastermind!"<<endl;
       
          
       //I left these here to show how I tested as I went along
