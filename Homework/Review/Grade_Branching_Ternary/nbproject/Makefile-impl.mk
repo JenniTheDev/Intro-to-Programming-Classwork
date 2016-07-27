@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=Savritch_9thed_Ch1_prob6_introduceerrors
+PROJECTNAME=Grade_Branching_Ternary
 
 # Active Configuration
 DEFAULTCONF=Debug

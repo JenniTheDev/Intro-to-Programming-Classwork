@@ -166,8 +166,8 @@ int main(int argc, char** argv) {
       
          
       //I left these here to show how I tested as I went along
-      //cout<<g1<<"-"<<g2<<"-"<<g3<<"-"<<g4<<endl; //this is for testing delete when done
-      //cout<<m1<<"--"<<m2<<"--"<<m3<<"--"<<m4<<endl;//this is for testing delete when done
+      cout<<g1<<"-"<<g2<<"-"<<g3<<"-"<<g4<<endl; //this is for testing delete when done
+      cout<<m1<<"--"<<m2<<"--"<<m3<<"--"<<m4<<endl;//this is for testing delete when done
       //cout<<nGuess<<"guesses should go up"<<endl; 
       
     

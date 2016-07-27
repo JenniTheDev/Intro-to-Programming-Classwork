@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=Cygwin-Windows
 CND_ARTIFACT_DIR_Debug=dist/Debug/Cygwin-Windows
-CND_ARTIFACT_NAME_Debug=savritch_9thed_ch1_prob6_introduceerrors
-CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin-Windows/savritch_9thed_ch1_prob6_introduceerrors
+CND_ARTIFACT_NAME_Debug=grade_branching_ternary
+CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin-Windows/grade_branching_ternary
 CND_PACKAGE_DIR_Debug=dist/Debug/Cygwin-Windows/package
-CND_PACKAGE_NAME_Debug=savritch9thedch1prob6introduceerrors.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin-Windows/package/savritch9thedch1prob6introduceerrors.tar
+CND_PACKAGE_NAME_Debug=gradebranchingternary.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin-Windows/package/gradebranchingternary.tar
 # Release configuration
 CND_PLATFORM_Release=Cygwin-Windows
 CND_ARTIFACT_DIR_Release=dist/Release/Cygwin-Windows
-CND_ARTIFACT_NAME_Release=savritch_9thed_ch1_prob6_introduceerrors
-CND_ARTIFACT_PATH_Release=dist/Release/Cygwin-Windows/savritch_9thed_ch1_prob6_introduceerrors
+CND_ARTIFACT_NAME_Release=grade_branching_ternary
+CND_ARTIFACT_PATH_Release=dist/Release/Cygwin-Windows/grade_branching_ternary
 CND_PACKAGE_DIR_Release=dist/Release/Cygwin-Windows/package
-CND_PACKAGE_NAME_Release=savritch9thedch1prob6introduceerrors.tar
-CND_PACKAGE_PATH_Release=dist/Release/Cygwin-Windows/package/savritch9thedch1prob6introduceerrors.tar
+CND_PACKAGE_NAME_Release=gradebranchingternary.tar
+CND_PACKAGE_PATH_Release=dist/Release/Cygwin-Windows/package/gradebranchingternary.tar
 #
 # include compiler specific variables
 #

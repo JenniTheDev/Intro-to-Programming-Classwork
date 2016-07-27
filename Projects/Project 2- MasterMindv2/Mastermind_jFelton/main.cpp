@@ -16,6 +16,7 @@ using namespace std;  //Namespace of the System Libraries
 //Global Constants
 
 //Function Prototypes
+void welcome ();
 int tries (int);
 char colors (char, char, char, char);
 
@@ -35,36 +36,15 @@ int main(int argc, char** argv) {
     
     //Instructions and into
     
-    do {
-        cout<<"Welcome to Mastermind!"<<endl;
-        cout<<"To learn how to play, press 1."<<endl;
-        cout<<"To play, press 2"<<endl;
-        cin>>play;
+    welcome();
     
-        switch(play){
-            case 1: 
-                cout<<"The objective of the game is to guess the 4 colors,"<<endl<<
-                "in the correct order, that the Codemaker has picked. The Codemaker"<<endl<<
-                "will let you know if you are right with a 'O' or wrong with a 'X'."<<endl<<
-                "Good Luck! and Have fun!"<<endl;
-                cout<<endl; 
-                break;
-            case 2:   cout<<"Let's play!"<<endl;
-                      break;  
-            default: cout<<"Not a valid answer, please choose 1 for directions or 2 to play"<<endl;break; 
-            } 
-    } while (play !=2);     //If they type in a letter instead of a number, it makes an endless loop. How can I fix this? 
+    tries (nTries); //function for number of tries- it isn't returning the value so it goes on guessing forever
     
-    
-   tries (nTries); //function for number of tries
-    
-   colors (m1,m2,m3,m4); //function for color convert from numbers to letters
+    colors (m1,m2,m3,m4); //function for color convert from numbers to letters isn't returning the colors
        
      
-          //THis is how the game is played. it can be a function
-
-
-    
+    //THis is how the game is played. it can be a function
+   
     do{
         cout<<"Pick 4 colors"<<endl; 
         cout<<"R,B,G,Y,O, or P"<<endl;
@@ -120,6 +100,34 @@ int main(int argc, char** argv) {
     //Exit Stage Right
     return 0;
 }
+
+
+void welcome (){
+    int play;
+    
+    do {
+        cout<<"Welcome to Mastermind!"<<endl;
+        cout<<"To learn how to play, press 1."<<endl;
+        cout<<"To play, press 2"<<endl;
+        cin>>play;
+    
+        switch(play){
+            case 1: 
+                cout<<"The objective of the game is to guess the 4 colors,"<<endl<<
+                "in the correct order, that the Codemaker has picked. The Codemaker"<<endl<<
+                "will let you know if you are right with a 'O' or wrong with a 'X'."<<endl<<
+                "Good Luck! and Have fun!"<<endl;
+                cout<<endl; 
+                break;
+            case 2:   cout<<"Let's play!"<<endl;
+                      break;  
+            default: cout<<"Not a valid answer, please choose 1 for directions or 2 to play"<<endl;break; 
+            } 
+    } while (play !=2);     //If they type in a letter instead of a number, it makes an endless loop. How can I fix this? 
+}
+
+
+
 
 
 int tries (int nTries){

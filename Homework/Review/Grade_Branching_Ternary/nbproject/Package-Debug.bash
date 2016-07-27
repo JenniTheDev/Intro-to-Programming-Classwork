@@ -13,9 +13,9 @@ CND_BUILDDIR=build
 CND_DLIB_EXT=dll
 NBTMPDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}/tmp-packaging
 TMPDIRNAME=tmp-packaging
-OUTPUT_PATH=${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/savritch_9thed_ch1_prob6_introduceerrors
-OUTPUT_BASENAME=savritch_9thed_ch1_prob6_introduceerrors
-PACKAGE_TOP_DIR=savritch9thedch1prob6introduceerrors/
+OUTPUT_PATH=${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/grade_branching_ternary
+OUTPUT_BASENAME=grade_branching_ternary
+PACKAGE_TOP_DIR=gradebranchingternary/
 
 # Functions
 function checkReturnCode
@@ -60,15 +60,15 @@ mkdir -p ${NBTMPDIR}
 
 # Copy files and create directories and links
 cd "${TOP}"
-makeDirectory "${NBTMPDIR}/savritch9thedch1prob6introduceerrors/bin"
+makeDirectory "${NBTMPDIR}/gradebranchingternary/bin"
 copyFileToTmpDir "${OUTPUT_PATH}.exe" "${NBTMPDIR}/${PACKAGE_TOP_DIR}bin/${OUTPUT_BASENAME}.exe" 0755
 
 
 # Generate tar file
 cd "${TOP}"
-rm -f ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/package/savritch9thedch1prob6introduceerrors.tar
+rm -f ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/package/gradebranchingternary.tar
 cd ${NBTMPDIR}
-tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/package/savritch9thedch1prob6introduceerrors.tar *
+tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/package/gradebranchingternary.tar *
 checkReturnCode
 
 # Cleanup
