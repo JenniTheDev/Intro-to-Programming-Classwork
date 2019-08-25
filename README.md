@@ -1,2 +1,3 @@
-# JF2543160
-Jennifer Felton CSC5 45277
+This hold the homework and project for my Intro to Programing Class at RCC. 
+
+Taken Summer of 2016. 
